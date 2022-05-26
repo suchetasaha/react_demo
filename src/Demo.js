@@ -1,7 +1,7 @@
 import React from "react";
 import logo from './logo.svg';
 import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, NavLink, NavbarText} from 'reactstrap';
-export default function Demo(){
+export default function Demo({parentToChild}) {
     return(
         <div>
      <Navbar
@@ -25,7 +25,9 @@ export default function Demo(){
         </NavItem>
       </Nav>
       <NavbarText>
-       Michale Jackson
+      <div>
+            {parentToChild}
+        </div>
       </NavbarText>
     </Collapse>
   </Navbar>
